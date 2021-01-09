@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- build:css css/main.css -->
+      <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Seattle FC - Login</title>
+
+    <title>SEATTLE FC</title>
+  </head>
+  <body>
+    
+      <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required/>
+                <input type="text" class="input-field" placeholder="Enter Your Password" required/>
+                <input type="checkbox" class= "check-box"/><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+              </form>
+              <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required/>
+                <input type="email" class="input-field" placeholder="Email ID" required/>
+                <input type="text" class="input-field" placeholder="Enter Your Password" required/>
+                <input type="text" class="input-field" placeholder="Re-enter Your Password" required/>
+                <input type="checkbox" class= "check-box"/><span>I agree to the terms and conditions.</span>
+                <button type="submit" class="submit-btn">Register</button>
+              </form>
+        </div>        
+      </div>
+      
+  
+  
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+  
+</html>
