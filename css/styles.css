@@ -1,0 +1,14 @@
+.jumbotron{
+    margin:0;
+    padding: 30px;
+    color: white;
+}
+
+.navbar {
+    background-color: green;
+    font-family: "Impact, fantasy";
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Impact, fantasy";
+}

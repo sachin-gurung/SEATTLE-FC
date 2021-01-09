@@ -1,2 +1,2 @@
 # SEATTLE-FC
-SEATTLE FC website
+SEATTLE FC website - Nucamp Bootcamp class project
