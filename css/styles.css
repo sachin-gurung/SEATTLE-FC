@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: green;
+    background-color: black;
     font-family: "Impact, fantasy";
 }
 
@@ -120,3 +120,29 @@ span{
 #register{
     left: 450px;
 }
+
+.carousel{
+    border:  solid black;
+    z-index: 100;
+}
+
+.card{
+    display: inline-block;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "card-title" "card-text" "card-footer";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+ .card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+ }
+
+
