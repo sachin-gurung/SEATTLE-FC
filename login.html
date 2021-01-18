@@ -33,16 +33,19 @@
   <body>
     
       <div class="hero">
-        <div class="form-box">
+        <div class="form-group">
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
             <form id="login" class="input-group">
+              
                 <input type="text" class="input-field" placeholder="User ID" required/>
                 <input type="text" class="input-field" placeholder="Enter Your Password" required/>
-                <input type="checkbox" class= "check-box"/><span>Remember Password</span>
+                <div class="container">
+                <input type="checkbox" class= "check-box"/> <span>Remember Password </span> 
+              </div>
                 <button type="submit" class="submit-btn">Log In</button>
               </form>
               <form id="register" class="input-group">
@@ -50,7 +53,9 @@
                 <input type="email" class="input-field" placeholder="Email ID" required/>
                 <input type="text" class="input-field" placeholder="Enter Your Password" required/>
                 <input type="text" class="input-field" placeholder="Re-enter Your Password" required/>
+                <div class="container">
                 <input type="checkbox" class= "check-box"/><span>I agree to the terms and conditions.</span>
+              </div>
                 <button type="submit" class="submit-btn">Register</button>
               </form>
         </div>        
